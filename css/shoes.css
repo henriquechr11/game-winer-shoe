@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.main a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(30px, 6vw, 60px);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.azul {
+    background-color: #159F9F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 10px;
+}
+
+.rosa {
+    background-color: #B81265;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 10px;
+}
+
+.logo {
+    height: clamp(40px, 60px, 60px);
+    width: auto;
+    display: block;
+
+}
+
+/* Video Section */
+#vf {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proml {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: clamp(300px, 45vw, 600px);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: clamp(20px, 4vw, 40px);
+    color: white;
+}
+
+.pr1 {
+    font-size: clamp(24px, 6vw, 100px);
+    text-align: left;
+    margin-bottom: clamp(10px, 2vw, 20px);
+    background: linear-gradient(90deg, #159F9F, #B81265);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: text-animation 2s infinite linear;
+}
+
+.proml p:last-child {
+    font-size: clamp(12px, 2vw, 15px);
+    text-align: left;
+    line-height: 1.4;
+}
+
+.promo-description {
+    font-size: clamp(12px, 2vw, 15px);
+    text-align: left;
+    line-height: 1.4;
+    color: aliceblue;
+}
+
+@keyframes text-animation {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+/* catalog ----------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+#catalog {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/assets/img/background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+#tenis {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    width: min(1200px, 90%);
+    gap: clamp(16px, 4vw, 32px);
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sh1 {
+    background-color: #23B6CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+.sh1:hover #buy {
+    opacity: 1;
+
+}
+
+.sh2:hover #buy {
+    opacity: 1;
+
+}
+
+.sh3:hover #buy {
+    opacity: 1;
+
+}
+
+.sh4:hover #buy {
+    opacity: 1;
+
+}
+
+.sh5:hover #buy {
+    opacity: 1;
+
+}
+
+.sh6:hover #buy {
+    opacity: 1;
+
+}
+
+.sh2 {
+    background-color: #D2960B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.sh3 {
+    background-color: #605F9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.sh4 {
+    background-color: #823CA5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.sh5 {
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.sh6 {
+    background-color: #47B468;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(243, 238, 238, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(251, 250, 250, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+
+.buy {
+    height: clamp(40px, 10vh, 64px);
+    width: clamp(120px, 30vw, 200px);
+    font-size: clamp(16px, 3vw, 24px);
+    background-color: transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    opacity: 0;
+    animation: pulse 2s infinite;
+}
+
+.shoe-title {
+    margin: 16px 0 8px 0;
+    padding: 0 16px;
+    text-align: center;
+    color: #ffffff;
+    font-size: clamp(14px, 2.4vw, 22px);
+}
+
+.shoe-image {
+    display: block;
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+}
+
+.sh1 a, .sh2 a, .sh3 a, .sh4 a, .sh5 a, .sh6 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sh1:hover .buy,
+.sh2:hover .buy,
+.sh3:hover .buy,
+.sh4:hover .buy,
+.sh5:hover .buy,
+.sh6:hover .buy {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    #tenis {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    header ul {
+        gap: 16px;
+    }
+    #tenis {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+    .proml {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 32px);
+    }
+    .buy {
+        opacity: 1;
+    }
+}
+
+
+.rodape {
+    width: 100%;
+    height: 40vh;
+    background-color: #c5c5c5;
+}
+
+.rlogo {
+    height: 10vh;
+}
+
+.r1 {
+    padding-top: 2%;
+    margin-left: 10%;
+}
+
+.r2 {
+    font-size: 20px;
+    padding-top: 2%;
+    margin-left: 10%;
+
+}
+
+.r3 {
+    font-size: 20px;
+    padding-top: 2%;
+    margin-left: 10%;
+    color: aliceblue;
+
+}
+
+.r2 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nome {
+    display: inline-block;
+    font-size: 20px;
+    color: aliceblue;
+    padding-top: 30px;
+    vertical-align: top;
+    margin-left: 2%;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game winer shoes</title>
+
+    <link rel="stylesheet" href="css/gianis.css">
+</head>
+
+<body>
+    <section class="main">
+
+        <header class="header">
+            <div class="azul">
+
+                <ul>
+                    <li><a href="shoes.html">SHOES</a></li>
+                    <li><a href="bests.html">BEST SELLERS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+
+
+
+
+            </div>
+
+
+            <div>
+                <a href="index.html"><img class="logo" src="assets/img/logo.png" alt=""></a>
+            </div>
+
+
+            <div class="rosa">
+
+                <ul>
+
+                    <li><a href="local.html"><img src="assets/img/local.png" alt=""></a></li>
+
+                    <li class="contact"><a href="contact.html"><img src="assets/img/contacts.png" alt=""></a></li>
+
+                    <li class="search"><a href=""><img src="assets/img/search.png" alt=""></a>
+                    </li>
+
+
+
+                </ul>
+
+
+
+            </div>
+
+
+        </header>
+
+
+        <section id="prom">
+
+
+            <div class="sprom">
+
+                <div class="shoe">
+
+
+                    <img style="margin-top: -10%;" src="assets/img/gianis.png" alt="">
+
+
+                </div>
+                <div class="texto">
+
+                    <p class="txt1">Tênis de Basquete 
+                        GIANNIS IMMORTALITY 3
+                        GREEN/PINK</p>
+                    <p id="txt2">759.99</p>
+
+
+                    <div class="selects" style="margin-left: 8%;">
+
+
+                        <div style="width: 300px;height: 10vh;display: flex;align-items: center;gap: 30px;">
+                            <label style="display: inline-block;" for="tamanho" class="sizet">SIZE</label>
+                            <select style="display: inline-block;" name="" id="size" required>
+                                <option value="">39</option>
+                                <option value="">40</option>
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+
+                            </select>
+                        </div>
+                        <div style="width: 300px;height: 10vh;display: flex;align-items: center;gap: 30px;">
+                            <label for="quantidade" class="quantt">quant</label>
+                            <select name="" id="quant" onchange="pfinal()" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex;align-items: center;justify-content: space-between;width: 400px;">
+                        <button class="glow-on-hover" id="openModalBtn" onclick="">BUY</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h2 style="margin-bottom: 3%;">Olá!</h2>
+                                <p>Obrigado por GIANNIS IMMORTALITY 3</p>
+                                <button id="closeModalButton2">OK</button>
+                            </div>
+                        </div>
+                        <span id="clickableStar" class="star">★</span>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+        </section>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- rodape------------------------------------------------------------------------------------------------------------------------- -->
+
+    <section class="rodape">
+        <div class="r1"><img class="rlogo" src="assets/img/logo.png" alt="">
+            <p class="nome">GAME WINER SHOES </p>
+        </div>
+        <div class="r2"><a href="aboutus.html">Política de Privacidade Gerenciar Minha Privacidade Legais
+                Acessibilidade Segurança dos Produtos Fale Conosco</a></div>
+        <div class="r3">Copyright © 2025 GWS Corporation</div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="/js/gianis.js"></script>
+</body>
+
+</html>
